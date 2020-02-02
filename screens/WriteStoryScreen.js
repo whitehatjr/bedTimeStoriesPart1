@@ -52,7 +52,7 @@ export default class WriteStoryScreen extends React.Component {
                     placeholder="Author"
                     onChangeText= {(text)=>{
                         this.setState({
-                            author: author
+                            author: text
                         })
                     }}
                     value={this.state.author}
