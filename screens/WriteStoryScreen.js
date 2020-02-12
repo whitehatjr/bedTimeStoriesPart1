@@ -25,39 +25,7 @@ export default class WriteStoryScreen extends React.Component {
                         style : { color: 'white', fontSize: 20}
                     }}
                 />
-                <TextInput 
-                    placeholder="Story Title"
-                    onChangeText= {(text)=>{
-                        this.setState({
-                            title: text
-                        })
-                    }}
-                    value={this.state.title}
-                    style={styles.title}/>
-                <TextInput
-                    placeholder="Author"
-                    onChangeText= {(text)=>{
-                        this.setState({
-                            author: text
-                        })
-                    }}
-                    value={this.state.author}
-                    style={styles.author} />
-                <TextInput 
-                    placeholder="Write your story"
-                    onChangeText= {(text)=>{
-                        this.setState({
-                            storyText: text
-                        })
-                    }}
-                    value={this.state.storyText}
-                    style={styles.storyText}
-                    multiline={true}/>
-                
-                <TouchableOpacity
-                    style={styles.submitButton}>
-                    <Text style={styles.buttonText}>Submit</Text>
-                </TouchableOpacity>
+                <Text>Read Story</Text>
             </View>
         );
     }
