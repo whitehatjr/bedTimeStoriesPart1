@@ -25,7 +25,7 @@ export default class WriteStoryScreen extends React.Component {
                         style : { color: 'white', fontSize: 20}
                     }}
                 />
-                <Text>Read Story</Text>
+                <Text>Write Story</Text>
             </View>
         );
     }
