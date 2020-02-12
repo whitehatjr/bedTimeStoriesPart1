@@ -15,20 +15,6 @@ export default class WriteStoryScreen extends React.Component {
         }
     }
 
-    submitStory = ()=>{
-        db.collection("stories").add({
-            title: this.state.title,
-            author: this.state.author,
-            storyText: this.state.storyText,
-            //date: firebase.firestore.FieldValue.serverTimestamp().now().toDate()
-        })
-        this.setState({
-            title: '',
-            author: '',
-            storyText: ''
-        })
-    }
-
     render(){
         return(
             <View style={styles.container}>
@@ -69,8 +55,7 @@ export default class WriteStoryScreen extends React.Component {
                     multiline={true}/>
                 
                 <TouchableOpacity
-                    style={styles.submitButton}
-                    onPress={this.submitStory}>
+                    style={styles.submitButton}>
                     <Text style={styles.buttonText}>Submit</Text>
                 </TouchableOpacity>
             </View>
